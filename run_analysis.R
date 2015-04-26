@@ -119,3 +119,6 @@ tidy_activity_data <- sum_activity_data %>%
 tidy_sum_data <- tidy_activity_data %>%
         group_by(variabletype, activitytype, subjectid) %>%
         summarize(meanvalue = mean(value))
+
+#writes the final data table with the averages to a text file
+write.table(tidy_sum_data, file="tidydataset.txt", row.names=FALSE)

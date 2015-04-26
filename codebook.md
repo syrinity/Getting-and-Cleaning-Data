@@ -90,6 +90,9 @@
 		86 fbodybodygyrojerkmagstd
 		
 ###	Additional information about the variables from the original data 
+		Note: Not all of the variables are included in the tidy data set because the tidy data set only captures the 
+		variables that have mean or std deviation in the name.
+		
 			The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals 
 		tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a 
 		constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass 
@@ -147,7 +150,8 @@
 		bandsEnergy(): Energy of a frequency interval within the 64 bins of the FFT of each window.
 		angle(): Angle between to vectors.
 
-		Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle() variable:
+		Additional vectors obtained by averaging the signals in a signal window sample. These are used on the 
+		angle() variable:
 
 		gravityMean
 		tBodyAccMean
@@ -169,7 +173,7 @@
 		1-30 representing the id of the person for whom the data was measured
 		
 		
-## value
-		The value of the measurement
+## meanvalue
+		The mean value of the measurements for the corresponding variabletype, activitytype and subjectid
 
 		
